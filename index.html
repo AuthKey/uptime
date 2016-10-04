@@ -1,47 +1,115 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Uptime by AuthKey</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>example.com Uptime</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>UptimeJS</h1>
-        <p>Uptime JS Script</p>
+    <header id="overall" class="overall">
+        <h1><i class="overall__logo hidden fa js-logo"></i>&nbsp;Website <b class="overall_status undefined js-state">checking...</b></h1>
+    </header>
+    <section class="services">
+        <div class="services__body">
+        <article class="services__item">
+            <div id="website" class="service">
+                <h2>
+                    <i class="service__logo fa fa-code"></i>Website
+                    <div class="service__status undefined js-state">checking...</div>
+                </h2>
+                
+                <div class="service__status"></div>
+                <ul class="website">
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-day">Ц&thinsp;Ц</b></div><div> 24 h.</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-week">Ц&thinsp;Ц</b></div><div>week</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-month">Ц&thinsp;Ц</b></div><div>mouth</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-year">Ц&thinsp;Ц</b></div><div>year</div>
+                    </li>
+                </ul>
+            </div>
+        </article>
 
-        <p class="view"><a href="https://github.com/AuthKey/uptime">View the Project on GitHub <small>AuthKey/uptime</small></a></p>
+        <article class="services__item">
+            <div id="api" class="service">
+                <h2>
+                    <i class="service__logo fa fa-cog"></i>API
+                    <div class="service__status undefined js-state">checking...</div>
+                </h2>
+                <div class="service__status"></div>
+                <ul class="service__availability">
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-day">Ц&thinsp;Ц</b></div><div> 24 h.</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-week">Ц&thinsp;Ц</b></div><div>week</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-month">Ц&thinsp;Ц</b></div><div>mouth</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-year">Ц&thinsp;Ц</b></div><div>year</div>
+                    </li>
+                </ul>
+            </div>
+        </article>
 
+        <article class="services__item">
+            <div id="servers" class="service">
+                <h2>
+                    <i class="service__logo fa fa-align-justify"></i>Servers
+                    <div class="service__status undefined js-state">checking...</div>
+                </h2>
+                <div class="service__status"></div>
+                <ul class="service__availability">
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-day">Ц&thinsp;Ц</b></div><div>за 24 часа</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-week">Ц&thinsp;Ц</b></div><div>week</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-month">Ц&thinsp;Ц</b></div><div>mouth</div>
+                    </li>
+                    <li class="service__level">
+                        <div class="service__percentage"><b class="undefined js-year">Ц&thinsp;Ц</b></div><div>year</div>
+                    </li>
+                </ul>
+            </div>
+        </article>
 
-        <ul>
-          <li><a href="https://github.com/AuthKey/uptime/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/AuthKey/uptime/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/AuthKey/uptime">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to UptimeJS!</h3>
+        </div>
+    </section>
 
-<p>The system works on an open platform API UptimeRobot.com. The simplicity of the system and its free especially for people.</p>
+    <section class="services services--social social">
+        <div class="services__body">
+            <article class="social__twitter">
+                <h2>News</h2>
+                // twitter news box // 
+            </article>
+            <article class="social__subscribe">
+                <p>Subscribe</p>
+                // twitter button subscribe //
+            </article>
+        </div>
+        
+    </section>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How install this?</h3>
-
-<p>Create a website on UptimeRobot.com and get the API key for your domain in the settings. Put the key in main.js and specify the id.</p>
-
-<p>Having a problem? Send email to <strong>github@proxy.ozon.us</strong></p>
-      </section>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <footer class="footer">
+        <a class="white" href="https://AuthKey.GitHub.io/uptime">Free JS Script at Github</a>
+    </footer>
   </body>
 </html>
